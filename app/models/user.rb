@@ -6,5 +6,6 @@ class User < ActiveRecord::Base
   				#:recoverable (can add recoverable in this line for recovering password),
 
   #Setup accessible (or protected) attributes for your model?
-      
+  
+  has_many :pins, :dependent => :destroy    
 end
